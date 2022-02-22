@@ -19,7 +19,7 @@ padding: 15px;
 
 body{
     background-color: #b6c9ff;
-      background-image: url(file:///C:/Users/User/Documents/NetBeansProjects/PaginaWebProyecto/src/main/webapp/cactus.png);
+      background-image: url(/Imagenes/cactus.png);
   background-attachment: fixed;
   background-position: right;
 }

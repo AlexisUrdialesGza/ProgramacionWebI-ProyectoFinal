@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="InicioSesion.css">
+        <link rel="stylesheet" href="/CSS/InicioSesion.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="Funciones.js"></script>
+        <script src="/JS/Login.js"></script>
         <title>
             LogIn
         </title>
@@ -17,7 +17,7 @@
     <p class="bienvenido">Bienvenido!</p>
     
     <div class="imgcontainer">
-    <img src="Rose.jpg" alt="Avatar" class="avatar">
+    <img src="/Imagenes/Rose.jpg" alt="Avatar" class="avatar">
   </div>
         <blockquote>
             <label class="texto" for="usuario"><b>Nombre de Usuario</b></label>
@@ -27,10 +27,7 @@
     <label class="texto" for="contraseña"><b>Contraseña</b></label>
 <form onsubmit ="return verifyPassword()">  
 <!-- Enter Password -->  
-<td> Enter Password </td>  
 <input type = "password" id = "pswd" value = "">   
-<!-- Click to verify valid password -->  
-<input type = "submit" value = "Submit">  
 </form>  
     </blockquote>
         <blockquote>
@@ -38,6 +35,7 @@
       <input type="checkbox" checked="checked" name="remember" class="texto"> Recordar contraseña
     </label>
         </blockquote>
+<!-- Click to verify valid password -->  
         <button onclick="alert(miFuncion())" type="submit" class="botonlogin">Login</button>
     <blockquote>
         <label class="textopsw">¿Se te olvido tu contraseña?</label>
@@ -45,7 +43,7 @@
     </blockquote>
     <button type="submit" class="botonpsw">Recuperala</button>
     
-    <button onclick="location.href = 'file:///C:\Users\User\Documents\Sourcetree\ProyectoFinal\HTML\Registro.html';" type="submit" class="botonrgs">Registrate</button>
+    <button onclick="location.href=/HTML/Registro.html;" type="submit" class="botonrgs">Registrate</button>
    
  </div><!-- comment -->
  </div>

@@ -9,8 +9,8 @@ and open the template in the editor.
         <title>Registro de Usuario</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="RegistroUsuario.css">
-        <script src="Funciones.js"></script>
+        <link rel="stylesheet" href="/CSS/RegistroUsuario.css">
+        <script src="/JS/Registro.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
           <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
@@ -54,7 +54,7 @@ and open the template in the editor.
     
             <blockquote>
             <label class="texto" for="Username"><b>Nombre de Usuario</b></label>
-        <input type="file" placeholder="" name="ImgUser" id="ImgUser" required>
+            <input type="text" placeholder="" name="Username" id="NombredeUsuario" required>
     </blockquote>
 
    <blockquote>
@@ -72,12 +72,12 @@ and open the template in the editor.
     <hr>
 
     <p class="texto">Al crear tu cuenta, estas aceptando nuestros <a href="#">Terminos de Servicio</a>.</p>
-    <button onclick="RegistrarContraseña()" type="submit" class="boton">Registrar</button>
+    <button onclick="RegistrarUsuario()" type="submit" class="boton">Registrar</button>
 
   </div>
               <div class="container signin">
     <p>Ya tienes una cuenta? <a href="#">Accede</a>.</p>
-        <button onclick="location.href = 'file:///C:\Users\User\Documents\Sourcetree\ProyectoFinal\HTML\index.html';"type="submit" class="boton">Regresar</button>
+    <button onclick="location.href =/HTML/index.html;" type="submit" class="boton">Regresar</button>
   </div>
         </div>
 
