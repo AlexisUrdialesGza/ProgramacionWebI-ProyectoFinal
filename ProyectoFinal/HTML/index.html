@@ -25,7 +25,13 @@
         </blockquote>
     <blockquote>
     <label class="texto" for="contraseña"><b>Contraseña</b></label>
-    <input type="password" placeholder="" name="contraseña" required>
+<form onsubmit ="return verifyPassword()">  
+<!-- Enter Password -->  
+<td> Enter Password </td>  
+<input type = "password" id = "pswd" value = "">   
+<!-- Click to verify valid password -->  
+<input type = "submit" value = "Submit">  
+</form>  
     </blockquote>
         <blockquote>
      <label>
@@ -39,7 +45,7 @@
     </blockquote>
     <button type="submit" class="botonpsw">Recuperala</button>
     
-    <button onclick="location.href = 'file:///C:/Users/User/Documents/Semestre%20AGO-SEP%202021/Programacion%20Web%201/PWProyecto1Avance/Registro.html';" type="submit" class="botonrgs">Registrate</button>
+    <button onclick="location.href = 'file:///C:\Users\User\Documents\Sourcetree\ProyectoFinal\HTML\Registro.html';" type="submit" class="botonrgs">Registrate</button>
    
  </div><!-- comment -->
  </div>

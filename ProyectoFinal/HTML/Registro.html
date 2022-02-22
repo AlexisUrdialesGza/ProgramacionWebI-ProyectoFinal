@@ -53,28 +53,31 @@ and open the template in the editor.
     </blockquote>
     
             <blockquote>
-            <label class="texto" for="ImgUser"><b>Imagen de Usuario</b></label>
+            <label class="texto" for="Username"><b>Nombre de Usuario</b></label>
         <input type="file" placeholder="" name="ImgUser" id="ImgUser" required>
     </blockquote>
 
    <blockquote>
        <label class="texto" for="psw"><b>Contraseña</b></label>
-    <input type="password" placeholder="" name="psw" id="psw" required>
+    <input type="password" placeholder="" name="pswd" id="psw" 
+        maxlength="8"
+        required>
+
    </blockquote>
 
        <blockquote>
     <label class="texto" for="psw-repeat"><b>Repetir Contraseña</b></label>
-    <input type="password" placeholder="" name="psw-repeat" id="psw-repeat" required>
+    <input type="password" placeholder="" name="pswd-repeat" id="pswd-repeat" required>
        </blockquote>
     <hr>
 
     <p class="texto">Al crear tu cuenta, estas aceptando nuestros <a href="#">Terminos de Servicio</a>.</p>
-    <button onclick="FuncionRegistro()" type="submit" class="boton">Registrar</button>
+    <button onclick="RegistrarContraseña()" type="submit" class="boton">Registrar</button>
 
   </div>
               <div class="container signin">
     <p>Ya tienes una cuenta? <a href="#">Accede</a>.</p>
-        <button onclick="location.href = 'file:///C:/Users/User/Documents/Semestre%20AGO-SEP%202021/Programacion%20Web%201/PWProyecto1Avance/index.html';"type="submit" class="boton">Regresar</button>
+        <button onclick="location.href = 'file:///C:\Users\User\Documents\Sourcetree\ProyectoFinal\HTML\index.html';"type="submit" class="boton">Regresar</button>
   </div>
         </div>
 
