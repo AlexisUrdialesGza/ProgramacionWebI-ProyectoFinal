@@ -1,86 +1,84 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
-    <head>
-        <title>Registro de Usuario</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/CSS/RegistroUsuario.css">
-        <script src="/JS/Registro.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
-    </head>
-    <body>
 
-        <h1 class = bienvenido>Registro de Usuario</h1>
-        
-        <div class="rectangle2">
-        <div class="rectangle">
- 
-    <p class="texto">Llenar esta forma para el registro de usuario</p>
-    <hr>
+<head>
+    <title>Registro de Usuario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/RegistroUsuario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+</head>
 
-        <blockquote>
-        <label class="texto" for="name"><b>Nombre</b></label>
-        <input type="text" placeholder="" name="name" id="name" required>
-    </blockquote>
-    
-        <blockquote>
-        <label class="texto" for="lastname"><b>Apellidos</b></label>
-        <input type="text" placeholder="" name="lastname" id="lastname" required>
-        </blockquote>
-        
-    <blockquote>
-        <label class="texto" for="birthday"><b>Fecha de Nacimiento</b></label>
-          <input type="text" id="datepicker" name="birthday">
-    </blockquote>
-    
-        <blockquote>
-            <label class="texto" for="User"><b>Email</b></label>
-        <input type="text" placeholder="" name="User" id="RegistroEmail" required>
-    </blockquote>
-    
-            <blockquote>
-            <label class="texto" for="Username"><b>Nombre de Usuario</b></label>
-            <input type="text" placeholder="" name="Username" id="NombredeUsuario" required>
-    </blockquote>
+<body>
 
-   <blockquote>
-       <label class="texto" for="psw"><b>Contraseña</b></label>
-    <input type="password" placeholder="" name="pswd" id="psw" 
-        maxlength="8"
-        required>
+    <h1 class="bienvenido">Registro de Usuario</h1>
 
-   </blockquote>
+    <div class="rectangle2">
+        <div class="rectangle" id="Registro">
+            <form action="#" id="RegisterForm">
 
-       <blockquote>
-    <label class="texto" for="psw-repeat"><b>Repetir Contraseña</b></label>
-    <input type="password" placeholder="" name="pswd-repeat" id="pswd-repeat" required>
-       </blockquote>
-    <hr>
+                <p class="texto">Llenar esta forma para el registro de usuario</p>
+                <hr>
 
-    <p class="texto">Al crear tu cuenta, estas aceptando nuestros <a href="#">Terminos de Servicio</a>.</p>
-    <button onclick="RegistrarUsuario()" type="submit" class="boton">Registrar</button>
+                <div>
+                    <label class="texto" for="name"><b>Nombre</b></label>
+                    <input type="text" placeholder="" name="name" id="RegName" >
+                </div>
 
-  </div>
-              <div class="container signin">
-    <p>Ya tienes una cuenta? <a href="#">Accede</a>.</p>
-    <button onclick="location.href =/HTML/index.html;" type="submit" class="boton">Regresar</button>
-  </div>
+                <div>
+                    <label class="texto" for="lastname"><b>Apellidos</b></label>
+                    <input type="text" placeholder="" name="lastname" id="RegLastname" >
+                </div>
+
+                <div>
+                    <label class="texto" for="birthday"><b>Fecha de Nacimiento</b></label>
+                    <input type='date' min="1899-01-01" max="3000-01-01" onfocus="this.max=new Date().toISOString().split('T')[0]" name="birthday" id="RegBirth"/>
+                </div>
+
+                <div>
+                    <label class="texto" for="User"><b>Email</b></label>
+                    <input type="text" placeholder="" name="User" id="RegEmail" >
+                </div>
+
+                <div>
+                    <label class="texto" for="Username"><b>Nombre de Usuario</b></label>
+                    <input type="text" placeholder="" name="Username" id="RegUsername" >
+                </div>
+
+                <div>
+                    <label class="texto" for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="" name="pswd" id="RegPswd" >
+
+                </div>
+
+                <div>
+                    <label class="texto" for="psw-repeat"><b>Repetir Contraseña</b></label>
+                    <input type="password" placeholder="" name="pswd-repeat" id="RegPswdRepeat" >
+                </div>
+
+                <div>
+                    <label class="texto" for="psw-image"><b>Imagen</b></label>
+                    <input type="file" placeholder="" name="pfp-image" id="RegPfpImage" accept="image/*" >
+                </div>
+                <hr>
+
+                <p class="texto">Al crear tu cuenta, estas aceptando nuestros <a href="#">Terminos de Servicio</a>.</p>
+                <input type="submit" value="Registrar" class="boton" id="RegistroSUBMIT">
+                
+            </form>
         </div>
+        <div class="container signin">
+            <p>Ya tienes una cuenta? <a href="#">Accede</a>.</p>
+            <button onclick= "location.href ='/HTML/index.html';" type="submit" class="boton">Regresar</button>
+        </div>
+    </div>
 
+    <script src="/JS/Funciones.js"></script>
+</body>
 
-    </body>
 </html>

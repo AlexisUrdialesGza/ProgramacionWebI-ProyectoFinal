@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/CSS/InicioSesion.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="/JS/Login.js"></script>
-        <title>
-            LogIn
-        </title>
-    </head>
-   <body>
-       
-       <h1></h1>
-    <div class = rectangle2>
-    <div class ="rectangle">
-    <p class="bienvenido">Bienvenido!</p>
-    
-    <div class="imgcontainer">
-    <img src="/Imagenes/Rose.jpg" alt="Avatar" class="avatar">
-  </div>
-        <blockquote>
-            <label class="texto" for="usuario"><b>Nombre de Usuario</b></label>
-    <input type="text" placeholder="" name="usuario" required>
-        </blockquote>
-    <blockquote>
-    <label class="texto" for="contraseña"><b>Contraseña</b></label>
-<form onsubmit ="return verifyPassword()">  
-<!-- Enter Password -->  
-<input type = "password" id = "pswd" value = "">   
-</form>  
-    </blockquote>
-        <blockquote>
-     <label>
-      <input type="checkbox" checked="checked" name="remember" class="texto"> Recordar contraseña
-    </label>
-        </blockquote>
-<!-- Click to verify valid password -->  
-        <button onclick="alert(miFuncion())" type="submit" class="botonlogin">Login</button>
-    <blockquote>
-        <label class="textopsw">¿Se te olvido tu contraseña?</label>
-        <label class="textologin">¿No tienes cuenta?</label>
-    </blockquote>
-    <button type="submit" class="botonpsw">Recuperala</button>
-    
-    <button onclick="location.href=/HTML/Registro.html;" type="submit" class="botonrgs">Registrate</button>
-   
- </div><!-- comment -->
- </div>
-    </body>
 
-    <footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/InicioSesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </footer>
+    <title>
+        LogIn
+    </title>
+</head>
+
+<body>
+
+    <h1></h1>
+    <div class=rectangle2>
+        <div class="rectangle">
+            <p class="bienvenido">Bienvenido!</p>
+
+            <div class="imgcontainer">
+                <img src="/Imagenes/Rose.jpg" alt="Avatar" class="avatar">
+            </div>
+            <div>
+                <form action="#" id="LoginForm">
+                    <div>
+
+                        <label class="texto" for="usuario"><b>Nombre de Usuario</b></label>
+                        <input type="text" placeholder="" name="usuario" id="LoginUser">
+                    </div>
+                    <div>
+                        <label class="texto" for="contraseña"><b>Contraseña</b></label>
+                        <input type="password" id="LoginPass" value="">
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" class="texto"> Recordar contraseña
+                        </label>
+                    </div>
+                    <input type="submit" class="botonlogin" value="Login">
+                </form>
+            </div>
+            <div>
+                <label class="textopsw">¿Se te olvido tu contraseña?</label>
+                <label class="textologin">¿No tienes cuenta?</label>
+            </div>
+            <button type="submit" class="botonpsw">Recuperala</button>
+
+            <button onclick="location.href='/HTML/Registro.html';" type="submit" class="botonrgs">Registrate</button>
+
+        </div><!-- comment -->
+    </div>
+    <script src="/JS/Login.js"></script>
+</body>
+
 </html>
